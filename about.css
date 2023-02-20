@@ -1,0 +1,220 @@
+*
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  margin: 0%
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Navigation Bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #483D8B;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+li a {
+  display: block;
+  color: white;
+  float: right;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+li img {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 7px 5px;
+  text-decoration: none;
+}
+
+li p{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #191970;
+}
+
+.active {
+  text-decoration: underline;
+  text-decoration-color: #5EDFFF;
+  text-decoration-thickness: 3px;
+}
+
+/* JMCCraft Logo Connected to smallcard id but its not belong to it */
+@media screen and (min-width: 320px){
+  .logo {
+  position:absolute;
+  top: 75px;
+  left: 38.5%; 
+  z-index: 2;
+  background-color: #483D8B;
+  border: 5px solid #483D8B;
+  border-radius: 50px;
+  text-align: center;
+  }
+}
+@media screen and (min-width: 481px){
+  .logo {
+    top: 65px;
+    left: 38.5%;
+    background-color: #483D8B;
+    border: 7px solid #483D8B;
+  }
+}
+@media screen and (min-width: 769px){
+  .logo {
+    top: 70px;
+    left: 45.099%; 
+    background-color: #483D8B;
+    border: 7px solid #483D8B;
+  }
+}
+
+
+/* Heading Pic */
+.head{
+  background-image: url('images/heading.png');
+  max-width: 100%;
+  height: 350px;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no repeat;
+  background-size: cover;
+  position: relative;
+}
+.head img{
+  text-align: center;
+  margin: auto;
+}
+
+/* Card Rotate */
+#rotaten{
+  webkit-transform:rotate(-3deg);
+  moz-transform:rotate(-3deg);
+  -o-transform:rotate(-3deg);
+  -ms-transform:rotate(-3deg);
+  transform:rotate(-3deg);
+}
+#rotatep{
+  webkit-transform:rotate(3deg);
+  moz-transform:rotate(3deg);
+  -o-transform:rotate(3deg);
+  -ms-transform:rotate(3deg);
+  transform:rotate(3deg);
+}
+
+/* Card */
+.card{
+  background-color: #ffffff;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.386);
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+@media screen and (max-width:600px) {
+  .card {
+    width: 85%;
+  }
+}
+.cardtext{
+  padding: 6px 14px;
+}
+
+/* Small Card for little content */
+.smallcard{
+  background-color: #ffffff;
+  display: block;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.386);
+  width: 150px;
+  text-align: center;
+  margin: auto;
+  padding: 0px 10px 0px;
+  border-radius: 3px;
+}
+.smallcardtext{
+  text-decoration: none;
+}
+
+.smallcard2{
+  background-color: #ffffff;
+  display: block;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.386);
+  width: fit-content;
+  text-align: center;
+  margin: auto;
+  padding: 0px 10px 0px;
+  border-radius: 3px;
+}
+.smallcardtext2{
+  text-decoration: none;
+}
+
+.aboutpics{
+  width: 50%;
+  height: 100%;
+}
+@media screen and (max-width:600px) {
+  .aboutpics{
+    width: 90%;
+    height: 100%;
+  }
+}
+
+/* Row */
+.column2 {
+  float: left;
+  width: 29%;
+  padding: 15px;
+}
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row2 {
+  margin: 0px -5px;
+}
+@media screen and (max-width:600px) {
+  .column2 {
+    width: 90%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Footer */
+#main-footer{
+  background-image: url('images/footer.png');
+  padding-top: 10%;
+  aspect-ratio: 16/9;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  clear: both;
+  padding-top: 50px;
+}
